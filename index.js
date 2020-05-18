@@ -37,11 +37,11 @@ client.on('message', (message) => {
   }
 
   if(message.content == 'embed') {
-    let img = 'https://cdn.discordapp.com/avatars/525289579662671882/47b0dab752b0c31dc8ca2646645db4fd.webp?size=128';
+    let img = 'https://cafeptthumb-phinf.pstatic.net/20110813_258/sullee0824_1313196440299gdQEN_jpg/%BF%B9%BB%DB%C4%B3%B8%AF%C5%CD10_sullee0824.jpg?type=w740;
     let embed = new Discord.RichEmbed()
       .setTitle('타이틀')
       .setURL('http://www.naver.com')
-      .setAuthor('유후', img, 'http://www.naver.com')
+      .setAuthor('문이', img, 'http://www.naver.com')
       .setThumbnail(img)
       .addBlankField()
       .addField('Inline field title', 'Some value here')
@@ -51,7 +51,7 @@ client.on('message', (message) => {
       .addField('Inline field title', 'Some value here1\nSome value here2\nSome value here3\n')
       .addBlankField()
       .setTimestamp()
-      .setFooter('유후가 만듬', img)
+      .setFooter('문이가 만듬', img)
 
     message.channel.send(embed)
   } else if(message.content == '!help') {
@@ -59,12 +59,12 @@ client.on('message', (message) => {
     let commandList = [
       {name: '!help', desc: 'help'},
       {name: 'ping', desc: '현재 핑 상태'},
-      {name: 'embed', desc: 'embed 예제1'},
-      {name: '!전체공지', desc: 'dm으로 전체 공지 보내기'},
-      {name: '!전체공지2', desc: 'dm으로 전체 embed 형식으로 공지 보내기'},
-      {name: '!청소', desc: '텍스트 지움'},
-      {name: '!초대코드', desc: '해당 채널의 초대 코드 표기'},
-      {name: '!초대코드2', desc: '봇이 들어가있는 모든 채널의 초대 코드 표기'},
+      {name: 'embed', desc: '이거 쓰면 서버 폭8'},
+      {name: '!전체공지', desc: '웅~ 너네 못써~!'},
+      {name: '!전체공지2', desc: '웅~ 너네 못써~!'},
+      {name: '!청소', desc: '웅~ 너네 못써~!'},
+      {name: '!초대코드', desc: '초대코드다 이새캬'},
+      {name: '!초대코드2', desc: '이것도 초대코드다'},
     ];
     let commandStr = '';
     let embed = new Discord.RichEmbed()
